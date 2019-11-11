@@ -1,8 +1,4 @@
 #lang racket
-(require racket/include)
-(include "q1.rkt")
-(require racket/trace)
-(trace sumUpRecursive)
-(trace sumUpTailRecursion)
-
-;NOT WORKING AAAAAAAAAAAAAAAAAAAAAAA
+;(require racket/include)
+(require "q1.rkt" racket/trace)
+(trace sumUpRecursive sumUpTailRecursion)

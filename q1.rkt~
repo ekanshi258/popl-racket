@@ -1,13 +1,11 @@
 #lang racket
 (provide (all-defined-out))
-(require racket/trace)
 ;recursive
 (define (sumUpRecursive list)
 	(if(empty? list) 0 (+ (car list) (sumUpRecursive (cdr list))))
 	)
 
 ;tail recursive
-(define (sumUpTailRecursion list acc)
+(define (sumUpTailRecursion list [acc 0])
 	(if (empty? list) acc (sumUpTailRecursion (cdr list) (+ (car list) acc)))
 	)
-(trace sumUpRecursive sumUpTailRecursion)
