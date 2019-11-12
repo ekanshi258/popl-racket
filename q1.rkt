@@ -7,7 +7,7 @@
 	)
 
 ;tail recursive
-(define (sumUpTailRecursion list acc)
-	(if (empty? list) acc (sumUpTailRecursion (cdr list) (+ (car list) acc)))
+(define (sumUpTailRecursion list w)
+	(if (empty? list) w (sumUpTailRecursion (cdr list) (+ (car list) w)))
 	)
 (trace sumUpRecursive sumUpTailRecursion)
