@@ -24,3 +24,6 @@
    )
 )
 
+(printPathsRecursive '(1 (2 (6) (7 (8))) (3 (9 (10) (11))) (4) (5)))
+
+(printPathsTailRecursive '(1 (2 (6) (7 (8))) (3 (9 (10) (11))) (4) (5)))
